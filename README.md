@@ -1,6 +1,6 @@
 # jsondiff
 
-*Specs
+## Specs
 .NET Core 2.0 Web API application
 
 Nuget Dependencies
@@ -8,13 +8,13 @@ Nuget Dependencies
 -Moq
 -xUnit
 
-*Instructions to run the application:
+## Instructions to run the application:
 1. Open the project in Visual Studio 2017
 2. Build Solution (F6)
 3. Execute on IIS Express (F5)
 4. The website will be published to IIS express and run on a custom port (52801)
 
-*Instructions to test the application
+## Instructions to test the application
 1. Use a HTTP client application, like Postman
 
 2. To send the first JSon object to the left endpoint, do a POST request like example below:
