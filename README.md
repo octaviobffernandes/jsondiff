@@ -17,7 +17,7 @@ Nuget Dependencies
 ## Instructions to test the application
 1. Use a HTTP client application, like Postman
 
-2. To send the first JSon object to the left endpoint, do a POST request like example below:
+2. To send the first JSon object to the left endpoint, do a POST request like:
 `{
 	POST /api/v1/diff/left HTTP/1.1
 	Host: localhost:52801
@@ -30,7 +30,7 @@ where the last line is the json object converted to base64 string, being passed 
 If input is invalid, a BadRequest response will be returned
 If it was accepted, an OK response will be returned
 
-3. To send the second JSon object to the right endpoint, do a POST request like example below:
+3. To send the second JSon object to the right endpoint, do a POST request like:
 `{
 	POST /api/v1/diff/right HTTP/1.1
 	Host: localhost:52801
@@ -44,13 +44,13 @@ If it was accepted, an OK response will be returned
 
 4. Before performing the diff, you can override any of the two json values by sending new POST requests
 
-5. To compare both objects, do a GET request like example below:
+5. To compare both objects, do a GET request like:
 `{
 	GET /api/v1/diff/ HTTP/1.1
 	Host: localhost:52801
 	Cache-Control: no-cache
 }`
-Response will be like example below:
+Response will be like:
 `{
     "areEqual": false,
     "differences": [
